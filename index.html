@@ -112,12 +112,19 @@
               <form action="https://formspree.io/xvownljp" method="POST">
                 
                 <input type="hidden" name="_subject" value="ldForm">                 
-                <label for="fname" class="form-labels" id="nameTest">NAME</label>
+                <!-- <label for="fname" class="form-labels" id="nameTest">NAME</label>
+                <input type="text" id="nameTest" name="name" required=""> -->
+
+
+                <label for="fname" class="form-labels">NAME</label>
                 <input type="text" id="nameTest" name="name" required="">
+                
                 <label for="femail" class="form-labels">EMAIL</label>
                 <input type="email" id="nameTest" name="_replyto" required="">
+                
                 <label for="fmessage" class="form-labels">MESSAGE</label>
                 <textarea class="form__textarea" name="message" id="message" required=""></textarea>
+                
                 <button class="form__button" type="submit">Send</button>
            
               </form>
