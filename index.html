@@ -1,0 +1,141 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Lorenzo Dalberto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="main.css">
+    </head>
+  <body>
+    
+   
+      <div class="grid-container">   
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">LDB</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          
+      
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <div class="navbar-nav float-right text-right pr-3"  >
+              <a class="nav-item nav-link"  id="men" href="#projects">Projects <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link"  id="men" href="#about">About</a>
+              <a class="nav-item nav-link"  id="men" href="#contact">Contact</a>
+            </div>
+          </div>
+        </nav>
+
+          <div class="grid-item" id="intro">
+              <div id="intro-text">
+              <h1>Hello, my name is <br>Lorenzo Dalberto</h1>
+              <h1> I am a developer<br>based in Edinburgh</h1>
+              </div>
+            </div>
+         
+        
+          <div class="grid-item" id="projects">
+              <div id="projects-text">
+                  <h1>PROJECTS <hr></h1>
+                  <div class="row" id="projects-text">
+                      <div class="col-sm" id="etch">
+                        <div class="card h-100" >
+                            <h3 class="card-title">Etch-A-Sketch</h3>
+                          <img class="card-img-top" src="imgs/etch.png" alt="Card image cap">
+                          <div class="card-body">
+                            <p class="card-text">Developed an old school classic game of "Etch A Sketch" using HTML, CSS and JavaScript. </p>
+                            <a href="https://github.com/ldbert/Etch-a-Sketch" class="btn btn-primary">GitHub repo</a>
+                            <a href="https://ldbert.github.io/Etch-a-Sketch/" class="btn btn-primary">View Live</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm" id="stu">
+                          <div class="card h-100" >
+                              <h3 class="card-title">Stuart Cobley</h3>
+                            <img class="card-img-top" src="imgs/stu.png" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Portfolio website for Edinburgh based photographer Stuart Cobley using WordPress</p>
+                              <a href="https://github.com/ldbert/Stuart-Cobley-Photography" class="btn btn-primary">GitHub Repo</a>
+                              <a href="https://github.com/ldbert/Stuart-Cobley-Photography" class="btn btn-primary">View Live</a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-sm" id="rps">
+                          <div class="card h-100" >
+                              <h3 class="card-title">Rock Paper Scissors</h3>
+                            <img class="card-img-top" src="imgs/rps.png" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">An implementation of “rock paper scissors”, with a twist. Developed using HTML, CSS and JavaScript.</p>
+                              <a href="https://github.com/ldbert/Pizza-Pasta-FishChips" class="btn btn-primary">GitHub Repo</a>
+                              <a href="https://ldbert.github.io/Pizza-Pasta-FishChips/" class="btn btn-primary">View Live</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>     
+              
+                  </div>
+
+
+          </div>
+
+
+        <div class="grid-item" id="about">
+          <div id="about-text">
+          <h1>ABOUT<hr></h1>
+          <h3 class="paragraph">I am a developer enjoying working in front-end developement <br>
+            but I have strong interets in back end</h3>
+          <p > I have developed application using HTML CSS Javascript Bootstrap and WordPress<br> I like clean and 
+            functional and distinct designs.</p> 
+          <p> Before moving into developed I worked as a photographer and in customer service roles.</p> 
+          <p> If I am not coding, I enjoy spending time cycling, walking up a munro with friends. </p> 
+
+        </div>
+        </div>
+
+
+        <div class="grid-item" id="contact">
+          <div id="contact-text">
+          <h1>CONTACT<hr></h1>
+             
+          <div id="contact-form">
+          
+
+
+            <div class="container">
+              <form action="https://formspree.io/xvownljp" method="POST">
+                
+                <input type="hidden" name="_subject" value="ldForm">                 
+                <label for="fname" class="form-labels" id="nameTest">NAME</label>
+                <input type="text" id="nameTest" name="name" required="">
+                <label for="femail" class="form-labels">EMAIL</label>
+                <input type="email" id="nameTest" name="_replyto" required="">
+                <label for="fmessage" class="form-labels">MESSAGE</label>
+                <textarea class="form__textarea" name="message" id="message" required=""></textarea>
+                <button class="form__button" type="submit">Send</button>
+           
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+                    
+
+   
+    <script type="text/javascript" src="myjs.js"></script>
+
+  </body>
+
+  </html>
+
+
+
+
+
