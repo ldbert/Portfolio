@@ -1,3 +1,12 @@
+$('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});
+
+
 function validate(){
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
@@ -35,13 +44,3 @@ function validate(){
 
 
 
-   // if(subject.length < 10){
-    //   text = "Please enter a subject";
-    //   error_message.innerHTML = text;
-    //   return false;
-    // }
-    // if(isNaN(phone) || phone.length > 10){
-    //   text = "Please enter valid Phone Number";
-    //   error_message.innerHTML = text;
-    //   return false;
-    // }

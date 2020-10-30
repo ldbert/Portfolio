@@ -1,148 +1,315 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <title>Lorenzo Dalberto</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="main.css">
-    </head>
-  <body>
-    
-   
-      <div class="grid-container">   
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">LDB</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          
-      
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <div class="navbar-nav float-right text-right pr-3"  >
-              <a class="nav-item nav-link"  id="men" href="#projects">Projects <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link"  id="men" href="#about">About</a>
-              <a class="nav-item nav-link"  id="men" href="#contact">Contact</a>
-            </div>
-          </div>
-        </nav>
+<!DOCTYPE html>
+<html lang="en">
 
-          <div class="grid-item" id="intro">
-              <div id="intro-text">
-              <h1>Hello, my name is <br>Lorenzo Dalberto</h1>
-              <h1> I am a developer<br>based in Edinburgh</h1>
-              </div>
-            </div>
-         
-        
-          <div class="grid-item" id="projects">
-              <div id="projects-text">
-                  <h1>PROJECTS <hr></h1>
-                  <div class="row" id="projects-text">
-                      <div class="col-sm" id="etch">
-                        <div class="card h-100" >
-                            <h3 class="card-title">Etch-A-Sketch</h3>
-                          <img class="card-img-top" src="imgs/etch.png" alt="Card image cap">
-                          <div class="card-body">
-                            <p class="card-text">Developed an old school classic game of "Etch A Sketch" using HTML, CSS and JavaScript. </p>
-                            <a href="https://github.com/ldbert/Etch-a-Sketch" class="btn btn-primary">GitHub repo</a>
-                            <a href="https://ldbert.github.io/Etch-a-Sketch/" class="btn btn-primary">View Live</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm" id="stu">
-                          <div class="card h-100" >
-                              <h3 class="card-title">Stuart Cobley</h3>
-                            <img class="card-img-top" src="imgs/stu.png" alt="Card image cap">
-                            <div class="card-body">
-                              <p class="card-text">Portfolio website for Edinburgh based photographer Stuart Cobley using WordPress</p>
-                              <a href="https://github.com/ldbert/Stuart-Cobley-Photography" class="btn btn-primary">GitHub Repo</a>
-                              <a href="https://github.com/ldbert/Stuart-Cobley-Photography" class="btn btn-primary">View Live</a>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="col-sm" id="rps">
-                          <div class="card h-100" >
-                              <h3 class="card-title">Rock Paper Scissors</h3>
-                            <img class="card-img-top" src="imgs/rps.png" alt="Card image cap">
-                            <div class="card-body">
-                              <p class="card-text">An implementation of “rock paper scissors”, with a twist. Developed using HTML, CSS and JavaScript.</p>
-                              <a href="https://github.com/ldbert/Pizza-Pasta-FishChips" class="btn btn-primary">GitHub Repo</a>
-                              <a href="https://ldbert.github.io/Pizza-Pasta-FishChips/" class="btn btn-primary">View Live</a>
-                            </div>
-                          </div>
-                      </div>
-                    </div>     
-              
-                  </div>
+<head>
+  <title>Lorenzo Dalberto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/8a339fdea7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="mycss.css">
+</head>
 
+<body>
+  <header>
+    <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center" id="black">
+      <a href="/" class="navbar-brand d-flex w-50 mr-auto" id="white">Lorenzo Dalberto</a>
+      <button class="navbar-toggler" id="blue" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon" id="red"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
 
-          </div>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" id="menuLink" href="#portfolio">projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="menuLink" href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="menuLink" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-
-        <div class="grid-item" id="about">
-          <div id="about-text">
-          <h1>ABOUT<hr></h1>
-          <h3 class="paragraph">I am a developer enjoying working in front-end developement <br>
-            but I have strong interets in back end</h3>
-          <p > I have developed application using HTML CSS Javascript Bootstrap and WordPress<br> I like clean and 
-            functional and distinct designs.</p> 
-          <p> Before moving into developed I worked as a photographer and in customer service roles.</p> 
-          <p> If I am not coding, I enjoy spending time cycling, walking up a munro with friends. </p> 
-
-        </div>
-        </div>
-
-
-        <div class="grid-item" id="contact">
-          <div id="contact-text">
-          <h1>CONTACT<hr></h1>
-             
-          <div id="contact-form">
-          
-
-
-            <div class="container">
-              <form action="https://formspree.io/xvownljp" method="POST">
-                
-                <input type="hidden" name="_subject" value="ldForm">                 
-                <!-- <label for="fname" class="form-labels" id="nameTest">NAME</label>
-                <input type="text" id="nameTest" name="name" required=""> -->
-
-
-                <label for="fname" class="form-labels">NAME</label>
-                <input type="text" id="nameTest" name="name" required="">
-                
-                <label for="femail" class="form-labels">EMAIL</label>
-                <input type="email" id="nameTest" name="_replyto" required="">
-                
-                <label for="fmessage" class="form-labels">MESSAGE</label>
-                <textarea class="form__textarea" name="message" id="message" required=""></textarea>
-                
-                <button class="form__button" type="submit">Send</button>
-           
-              </form>
-            </div>
-          </div>
-          </div>
+  <intro>
+    <div class="wrapper">
+      <div class="div1">
+        <div class="contento">
+          <h1 class="h1div1">A web developer </h1>
         </div>
       </div>
-                    
-
-   
-    <script type="text/javascript" src="myjs.js"></script>
-
-  </body>
-
-  </html>
-
+      <div class="div2">
+        <div class="contento">
+          <h1 class="h1div2">With passion for learning</h1>
+        </div>
+      </div>
+    </div>
+  </intro>
 
 
+  <div class="slanted_div" id="portfolio">
+    <span id="proj">PROJECTS</span>
+  </div>
+
+  <div class="container" >
+    <p class="lead text-center">Click on the image to see the project description.</p>
+    <br>
+    <!-- <div class="row object-non-visible"> -->
+    <div class="col-md-12">
+
+      <!-- portfolio items start -->
+      <div class="portfolio-container row grid-space-20" id="rowPort">
+
+        <!-- Landing page -->
+        <div class="col-md-4 portfolio-item">
+          <div class="image-box">
+            <div class="overlay-container" id="hovereffect">
+              <img src="imgs/stuBW.png" alt="Photographer's website">
+              <a class="overlay" data-toggle="modal" data-target="#stu">
+                <i class="fa fa-search-plus"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="stu" tabindex="-1" role="dialog" aria-labelledby="stu-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+
+                  <h4 class="modal-title" id="stu-label">A photographer's website</h4>
+                </div>
+                <div class="modal-body">
+                  <!-- <h3>Project Description</h3> -->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <!-- <p>This landing page was created from markup.</p>
+														<p>Features realized on this website: slider (click on the image to stop or to start again), animation, scroll, form validation, clock with a gradient, back to top button, adaptation for mobile phones and tablets.</p> -->
+                      <h4 class="technologies">Technologies used to create the project:</h4>
+                      <ul class="list-unstyled">
+                        <li id="test"></i>WordPress</li>
+                        <li id="test"></i>GitHub</li>
+                      </ul>
+                      <p>Click on the <a href="https://stuartcobleyphotography.com/" target="_blank">image</a> to
+                        see the website on the new tab.</p>
+                      <p>Click <a href="https://github.com/ldbert/Stuart-Cobley-Photography" target="_blank">here</a> to
+                        get the source code from GitHub.</p>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="https://stuartcobleyphotography.com/" target="_blank"><img src="imgs/stuBW.png"
+                          alt="Photographer's website"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal End-->
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <div class="image-box">
+            <div class="overlay-container" id="hovereffect">
+              <img src="imgs/etchBW.png" alt="Etch-A-Sketch">
+              <a class="overlay" data-toggle="modal" data-target="#etch">
+                <i class="fa fa-search-plus"></i>
+              </a>
+            </div>
+            <!-- <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-8">Landing page example</a> -->
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="etch" tabindex="-1" role="dialog" aria-labelledby="etch-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
+                  <h4 class="modal-title" id="etch-label">Etch-A-Sketch</h4>
+                </div>
+                <div class="modal-body">
+                  <!-- <h3>Project Description</h3> -->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <!-- <p>This landing page was created from markup.</p>
+                              <p>Features realized on this website: slider (click on the image to stop or to start again), animation, scroll, form validation, clock with a gradient, back to top button, adaptation for mobile phones and tablets.</p> -->
+                      <h4 class="technologies">Technologies used to create the project:</h4>
+                      <ul class="list-unstyled">
+                        <li id="test"></i>HTML</li>
+                        <li id="test"></i>CSS</li>
+                        <li id="test"></i>JavaScript</li>
+                        <li id="test"></i>GitHub</li>
+                      </ul>
+                      <p>Click on the <a href="https://ldbert.github.io/Etch-a-Sketch/" target="_blank">image</a>
+                        to see the application in a new tab.</p>
+                      <p>Click <a href="https://github.com/ldbert/Etch-a-Sketch" target="_blank">here</a> to
+                        get the source code from GitHub.</p>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="https://ldbert.github.io/Etch-a-Sketch/" target="_blank"><img src="imgs/etchBW.png"
+                          alt="Etch-A-Sketch"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <div class="image-box">
+            <div class="overlay-container" id="hovereffect">
+              <img src="imgs/ppBW.png" alt="Rock Paper Scissors">
+              <a class="overlay" data-toggle="modal" data-target="#rps">
+                <i class="fa fa-search-plus"></i>
+              </a>
+            </div>
+            <!-- <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-8">Landing page example</a> -->
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="rps" tabindex="-1" role="dialog" aria-labelledby="rps-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <button type="button" class="close" data-dismiss="modal"><span
+                              aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
+                  <h4 class="modal-title" id="rps-label">Rock Paper Scissors with a twist</h4>
+                </div>
+                <div class="modal-body">
+                  <!-- <h3>Project Description</h3> -->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <!-- <p>This landing page was created from markup.</p>
+                                <p>Features realized on this website: slider (click on the image to stop or to start again), animation, scroll, form validation, clock with a gradient, back to top button, adaptation for mobile phones and tablets.</p> -->
+                      <h4 class="technologies">Technologies used to create the project:</h4>
+                      <ul class="list-unstyled">
+                        <li id="test"></i>HTML</li>
+                        <li id="test"></i>CSS</li>
+                        <li id="test"></i>JavaScript</li>
+                        <li id="test"></i>GitHub</li>
+                      </ul>
+                      <p>Click on the <a href="https://ldbert.github.io/Pizza-Pasta-FishChips/"
+                          target="_blank">image</a>
+                        to see the application in a new tab.</p>
+                      <p>Click <a href="https://github.com/ldbert/Pizza-Pasta-FishChips" target="_blank">here</a> to
+                        get the source code from GitHub.</p>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="https://ldbert.github.io/Pizza-Pasta-FishChips/" target="_blank"><img src="imgs/ppBW.png"
+                          alt="Rock Paper Scissors"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--SECTION END -->
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </div>
 
 
+
+
+  <div class="slanted_div" id="about">
+    <span>ABOUT</span>
+  </div>
+
+  <div class="container">
+    <div class="row" id="rowAbout">
+
+      <div class="col-md-4">
+        <img src="imgs/me.jpg" alt="My Photo" class="my-photo">
+      </div>
+      <div class="col-md-8" id="aboutMe">
+        <p>
+          I am a well organised and enthusiastic individual
+          with good knowledge of HTML, CSS and JavaScript language.
+        </p>
+        <p>
+          I hold a BSc in Computing which gave me a sound technological knowledge of computer
+          software packages (frameworks and tools) that are used in today’s technology.
+        </p>
+        <p>
+          I have great interpersonal and problem solving skills from previous working experience,
+          I thrive in a team-oriented atmosphere but I am also able to work on my own initiative,
+          while learning new skills quickly.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="slanted_div" id="contact">
+    <span>CONTACT ME</span>
+  </div>
+
+  <div class="contact">
+    <div class="row" id="rowContact">
+
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6" id="contact">
+        <div class="container1">
+
+          <form action="https://formspree.io/xvownljp" method="POST">
+
+            <input type="hidden" name="_subject" value="ldForm">
+            <!-- <label for="fname" class="form-labels" id="nameTest">NAME</label>
+                                    <input type="text" id="nameTest" name="name" required=""> -->
+
+
+            <label for="fname" class="form-labels">NAME</label>
+            <input type="text" id="nameTest" name="name" required="">
+
+            <label for="femail" class="form-labels">EMAIL</label>
+            <input type="email" id="nameTest" name="_replyto" required="">
+
+            <label for="fmessage" class="form-labels">MESSAGE</label>
+            <textarea class="form__textarea" name="message" id="message" required=""></textarea>
+
+            <button class="form__button" type="submit" id="sub">Send</button>
+
+          </form>
+
+        </div>
+      </div>
+      <div class="col-md-3">
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="logos">
+      <div class="row">
+        <div class="col-sm-3" style="background-color:white;"></div>
+        <div class="col-sm-3" style="background-color:white;"><a href="https://github.com/ldbert" target="_blank"><img src="imgs/GHBW.png"
+          alt="GitHub" style="width:30%"></a></div>
+        <div class="col-sm-3" style="background-color:white;"><a href="https://github.com/ldbert" target="_blank"><img src="imgs/LIBW.png"
+          alt="Linkedin" style="width:30%"></a></div>
+        <div class="col-sm-3" style="background-color:white;"></div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+</body>
+
+</html>
