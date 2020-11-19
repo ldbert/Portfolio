@@ -410,7 +410,7 @@
     
     button.form__button{
       background: #1ADF9E;;
-      border: .1em solid #445851;
+      border: .1em solid black;
       border-radius: 0;
       cursor: pointer;
       font-family: 'Big John',Helvetica,'Helvetica Neue',Arial,sans-serif;
@@ -435,8 +435,12 @@
 
     }
 
+    .row{
+      margin: 0px !important;
+    }
+
     #rowPort{
-      margin:0px;
+      margin-top:10px !important;
       padding:0px;
     }
 
